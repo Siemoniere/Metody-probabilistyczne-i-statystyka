@@ -1,7 +1,7 @@
+import org.apache.commons.math3.random.MersenneTwister;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Random;
 
 public class BallsAndBins {
 
@@ -43,7 +43,7 @@ public class BallsAndBins {
     }
 
     public static void main(String[] args) {
-        Random random = new Random();
+        MersenneTwister random = new MersenneTwister();
         StringBuilder result = new StringBuilder();
         for (int i = 1000; i <=100000; i+=1000){
             System.out.println(i);
