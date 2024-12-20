@@ -1,9 +1,7 @@
-//import org.apache.commons.math3.random.MersenneTwister;
-
+import org.apache.commons.math3.random.MersenneTwister;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Random;
 
 public class CommunicationNetwork {
 
@@ -18,7 +16,7 @@ public class CommunicationNetwork {
 
     public static void main(String[] args) {
         StringBuilder result = new StringBuilder();
-        Random rand = new Random();
+        MersenneTwister rand = new MersenneTwister();
         double p[] = {0.1, 0.5};
         for (double pi : p){  
             for (int n = 100; n <= 10000 ; n += 100){
